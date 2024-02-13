@@ -48,7 +48,7 @@ int main()
     // Debug information about any request can be added by including a callback handler for debug
     // information.  Just pass in a lambda to capture the verbose debug information.
     sync_request.debug_info_handler(
-        [](const lift::request& /*unused*/, lift::debug_info_type type, std::string_view data) {
+        [](const lift::request${EXAMPLE_README_CPP} /*unused*/, lift::debug_info_type type, std::string_view data) {
             std::cout << "sync_request (" << lift::to_string(type) << "): " << data;
         });
 
